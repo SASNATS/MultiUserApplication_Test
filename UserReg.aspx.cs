@@ -17,8 +17,8 @@ namespace MultiUserApplication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string str = "select max(Reg_Id) from Login_tbl";
-            string s = clsobj.fn_execute_scalar(str);
+            string strid = "select max(Reg_Id) from Login_tbl";
+            string s = clsobj.fn_execute_scalar(strid);
 
             int regid = 0;
             if (s == "")
